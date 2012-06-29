@@ -1,0 +1,121 @@
+\documentclass[12pt,cyan]{beamer}
+\mode<presentation>
+\usepackage{graphicx}
+\usetheme[secheader]{Boadilla}
+\useoutertheme{infolines}
+\usecolortheme{rose}
+\usecolortheme{seahorse}
+\setbeamertemplate{caption}[numbered]
+\useinnertheme{rounded}
+\beamertemplatetransparentcoveredhigh
+%\setbeamercovered{dynamic}
+\title{INHERITANCE}
+\subtitle{Zoo Model}
+\author[Abokumah,Seth,Yonni,Kofi,Cobby]{Abokumah Welbeck\\Seth Fiawoo\\Yonni Quartey\\Kofi Afrifa\\Kwabena Ansah }
+\institute[MIT-AITI]{MIT-AITI}
+\date{\today}
+
+
+
+\begin{document}
+\frame{
+\titlepage}
+
+\begin{frame}
+\title{Overview}
+The main components of a zoo are the animals, humans and building structures. \\
+Considering the attributes of a zoo, we chose the classes; “humans”, “animals”, and “structures” to inherit directly from the zoo class because, these are the basic groups of entities found in a zoo. 
+\end{frame}
+
+\begin{frame}
+ \includegraphics[width=\linewidth]{Drawing1}
+\end{frame}
+
+\begin{frame}
+\title{Attributes of Zoo Class: }
+Name: 
+Location:\\
+Working hours:\\
+Present Population:\\
+List of Structures:\\
+Dictionary of Animals:animal name: quantity\\
+Animal Capacity:\\
+Human Capacity:\\
+\end{frame}
+
+
+
+
+
+\begin{frame}
+Methods:
+getPresentPopulation:\\
+getListofStructures:\\
+getListofAnimals:\\
+getHumanCapacity:\\
+updatePopulation:\\
+updateAnimalList: 
+\end{frame}
+
+
+\begin{frame}
+Class Animal:
+This is a class of animals found in a zoo at a particular point in time.\\
+Attributes:\\
+Name\\
+PetName\\
+Age\\
+BirthPlace\\
+IDTag 
+\end{frame}
+
+\begin{frame}
+Methods():\\
+getName()\\
+getPetName\\
+getAge\\
+getBirthPlace\\
+getID\\
+transferAnimal\\
+acquireAnimal
+
+\end{frame}
+
+\begin{frame}
+Class Humans\\
+This class describes the people who are found in a zoo at any point in time.\\
+Attributes:\\
+Name:\\
+Gender:\\
+Age:\\
+Nationality:\\
+Methods\\
+getName\\
+getAge\\
+getGender\\
+getNationality
+\end{frame}
+
+\begin{frame}
+Class Workers\\
+Attributes:\\
+SSN\\
+Shift\\
+Salary\\
+JobType\\
+Methods\\
+getSSN\\
+printWorkerDetails
+\end{frame}
+
+\begin{frame}
+Class Structures\\
+This is a class the describes the various structures found in a zoo: buildings and animal habitats\\ 
+Attributes:\\
+Location\\
+Type\\
+Methods\\
+getStructDetails
+\end{frame}
+
+\end{document}
